@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MenuActivity"
     android:columnCount="1"
-    android:background="@drawable/gradient_a"
-    tools:context=".MenuActivity">
-
+    android:background="@drawable/gradient_a">
     <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_columnWeight="1"
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/img_teenagers_128"
         android:textColor="#fff"
-        android:text="Master Pemakai"></Button>
+        android:text="Master Pemakaian">
+    </Button>
     <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
+        android:layout_width="wrap_content"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/student"
+        android:layout_columnWeight="1"
         android:textColor="#fff"
-        android:text="Master Mahasiswa"></Button>
+        android:drawableRight="@drawable/student"
+        android:text="Master Mahasiswa"
+        android:id="@+id/btnMahasiswa">
+    </Button>
 
 
 </GridLayout>
