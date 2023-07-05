@@ -15,8 +15,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class MenuActivity extends AppCompatActivity {
 
-    private Button _btnMahasiswa;
-    private Intent _tampilMahasiswaIntent;
+    private Button _btnMahasiswa, _tampilForexButton;
+    private Intent _tampilMahasiswaIntent, _tampilForexintent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +42,18 @@ public class MenuActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                         Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+
+                        _tampilForexButton = findViewById(R.id.TampilForex);
+
+                        _tampilForexButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(getApplicationContext(), ForexMainActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+
+
                     }
                 });
             }
