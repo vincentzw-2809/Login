@@ -1,5 +1,6 @@
 package vincentzw.myapplication;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,8 +15,8 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import cz.msebera.android.httpclient.Header;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
+
     private Button _loginButton;
     private EditText _idEditText;
     private EditText _passwordEditText;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity
     private String _id;
     private String _password;
     private String _url;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
